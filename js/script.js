@@ -2,10 +2,10 @@ new Vue (
     {
         el: '#app',
         data: {
-            dischi: []            
+            albums: []            
         },
         created () {
-            axios.get('http://localhost:8888/php-ajax-dischi/databaseDischi.php').then((result) => {
+            axios.get('http://localhost:8888/php-ajax-dischi/api.php').then((result) => {
               this.albums = result.data.response;
             })
         }
