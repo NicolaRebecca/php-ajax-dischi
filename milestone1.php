@@ -19,29 +19,29 @@
     <main>
         <div class="container">
 
+            
             <?php
                 foreach($albums as $albums) {
-            ?>
-            
-            <div class="album-container">
                 
-                <div class="album-box">
-                    <img class="poster" src="<?php echo "{$albums['poster']}";?>" alt="<?php echo "{$albums['title']} Poster";?>">
-                    
-                    <div class="album-title">
-                        <h2><?php echo "{$albums['title']}";?></h2>
-                    </div>
-                    
-                    <div class=album-info>
-                        <?php echo "{$albums['author']}";?>
-                        <?php echo "{$albums['year']}";?>
-                    </div>
-                </div>
-    
-            </div>
+                    echo
             
-            <?php 
-            }; 
+                    "<div class=album-container>" . 
+                
+                        "<div class=album-box>".
+                            "<img class=poster src= {$albums['poster']} <alt= {$albums['title']} >" .
+                    
+                            "<div class=album-title>" . 
+                                "<h2>" . "{$albums['title']}" . "</h2>" .
+                            "</div>" .
+                    
+                            "<div class=album-info>" .
+                                "{$albums['author']}" .
+                                "{$albums['year']}" .
+                            "</div>" .
+                        "</div>" .
+    
+                    "</div>" ;
+                }; 
             ?>
             
             
