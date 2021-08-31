@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+main {
+    width: 100%;
+    background-color: #192631;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+.poster {
+    width: 100%;
+}
+
+.album-container {
+    width: calc((100% / 5) - 24px);
+    background-color: #2b343d;
+    margin: 12px;
+    text-align: center;
+}
+
+.album-box {
+    padding: 24px;
+} 
+
+
+.album-title {
+    color: white;
+    margin: 12px 0 24px 0;
+}
+
+.album-info {
+    padding: 2px 0;
+    color: #717264;
+}

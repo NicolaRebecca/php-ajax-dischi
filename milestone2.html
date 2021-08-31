@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>  
+</head>
+
+<body>
+    
+
+    <div id="app">
+
+        <main>
+            <div class="container">
+                <div class="album-container" v-for="album in albums">
+                    <div class="album-box" >
+                        <img class="poster" :src="album.poster" alt="">
+                    
+                        <div class="album-title">
+                            <h2> {{album.title}} </h2>
+                        </div>
+                    
+                        <div class="album-info">
+                        {{album.author}}
+                        {{album.year}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+
+
+    <script src="./js/script.js"></script> 
+    
+
+
+</body>
+</html>
