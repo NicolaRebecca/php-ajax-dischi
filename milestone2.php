@@ -15,16 +15,16 @@
     <div id="app">
 
         <div class="album-container">
-            <div class="album-box" v-for="album in albums" >
-                <img class="poster" :src="disco.poster" alt="">
+            <div class="album-box" v-for="album in albums">
+                <img class="poster" :src="album.poster" alt="">
                     
                 <div class="album-title">
-                    <h2> {{disco.title}} </h2>
+                    <h2> {{album.title}} </h2>
                 </div>
                     
                 <div class="album-info">
-                    {{disco.author}}
-                    {{disco.year}}
+                    {{album.author}}
+                    {{album.year}}
                 </div>
             </div>
         </div>
